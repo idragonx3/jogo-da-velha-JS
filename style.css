@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tabuleiro {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+
+}
+
+.campoTabuleiro{
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 170px;
+    height: 170px;
+}
+
+
+.imagens{
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-x{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.imagem-circulo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
