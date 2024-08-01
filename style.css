@@ -1,48 +1,54 @@
-*{
+/* Reseta as margens e preenchimentos de todos os elementos */
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+/* Estilização do corpo da página */
+body {
+    display: flex; /* Define o layout como flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
 }
 
+/* Estilização do tabuleiro do jogo */
 .tabuleiro {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-
+    width: 500px; /* Define a largura do tabuleiro */
+    height: 500px; /* Define a altura do tabuleiro */
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: auto auto auto; /* Cria três colunas automáticas */
+    grid-gap: 10px; /* Define um espaçamento de 10px entre os campos */
 }
 
-.campoTabuleiro{
-    background-color: lightblue;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 170px;
-    height: 170px;
+/* Estilização dos campos do tabuleiro */
+.campoTabuleiro {
+    background-color: lightblue; /* Define a cor de fundo dos campos */
+    border: 1px solid black; /* Define uma borda preta de 1px */
+    border-radius: 5px; /* Arredonda os cantos dos campos */
+    cursor: pointer; /* Muda o cursor para indicar que o campo é clicável */
+    width: 170px; /* Define a largura dos campos */
+    height: 170px; /* Define a altura dos campos */
 }
 
-
-.imagens{
-    height: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imagem-x{
-    width: 100px;
-    height: 100px;
-    position: absolute;
+/* Estilização das imagens dentro dos campos */
+.imagens {
+    height: 170px; /* Define a altura do contêiner de imagens */
+    display: flex; /* Define o layout como flexível */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
 }
 
-.imagem-circulo{
-    width: 100px;
-    height: 100px;
-    position: absolute;
+/* Estilização das imagens de "X" */
+.imagem-x {
+    width: 100px; /* Define a largura da imagem */
+    height: 100px; /* Define a altura da imagem */
+    position: absolute; /* Define a posição como absoluta para sobreposição */
+}
+
+/* Estilização das imagens de círculo */
+.imagem-circulo {
+    width: 100px; /* Define a largura da imagem */
+    height: 100px; /* Define a altura da imagem */
+    position: absolute; /* Define a posição como absoluta para sobreposição */
 }
